@@ -1,0 +1,261 @@
+// mockData.js
+
+const foodList = [
+  {
+    id: "food1",
+    name: "Goan Fish Curry",
+    description:
+      "Coconut-based spicy curry made with kingfish and local spices.",
+    price: 250,
+    currency: "INR",
+    cuisine: "Goan",
+    category: "Seafood",
+    tags: ["spicy", "coconut", "authentic"],
+    rating: 4.6,
+  },
+  {
+    id: "food2",
+    name: "Prawn Balchão",
+    description:
+      "Fiery prawn pickle cooked in vinegar, chilies, and aromatic spices.",
+    price: 320,
+    currency: "INR",
+    cuisine: "Goan",
+    category: "Seafood",
+    tags: ["tangy", "spicy", "shellfish"],
+    rating: 4.4,
+  },
+  {
+    id: "food3",
+    name: "Crab Xacuti",
+    description:
+      "Crab cooked in roasted coconut gravy with poppy seeds and spices.",
+    price: 420,
+    currency: "INR",
+    cuisine: "Goan",
+    category: "Seafood",
+    tags: ["rich", "spicy", "coconut"],
+    rating: 4.7,
+  },
+  {
+    id: "food4",
+    name: "Pomfret Rawa Fry",
+    description: "Crispy semolina-coated pomfret served with lemon and salad.",
+    price: 380,
+    currency: "INR",
+    cuisine: "Goan",
+    category: "Seafood",
+    tags: ["fried", "crispy"],
+    rating: 4.5,
+  },
+  {
+    id: "food5",
+    name: "Vegetable Xacuti",
+    description: "Vegetables simmered in roasted coconut and spice masala.",
+    price: 180,
+    currency: "INR",
+    cuisine: "Goan",
+    category: "Vegetarian",
+    tags: ["vegetarian", "creamy"],
+    rating: 4.2,
+  },
+  {
+    id: "food6",
+    name: "Mushroom Caldin",
+    description: "Mild yellow curry with mushrooms and coconut milk.",
+    price: 160,
+    currency: "INR",
+    cuisine: "Goan",
+    category: "Vegetarian",
+    tags: ["light", "coconut", "mild"],
+    rating: 4.1,
+  },
+  {
+    id: "food7",
+    name: "Paneer Cafreal",
+    description: "Grilled paneer marinated in coriander-mint green masala.",
+    price: 210,
+    currency: "INR",
+    cuisine: "Goan",
+    category: "Vegetarian",
+    tags: ["grilled", "herb", "green-masala"],
+    rating: 4.3,
+  },
+  {
+    id: "food8",
+    name: "Goan Dal Curry",
+    description:
+      "Traditional lentil curry tempered with curry leaves and mustard seeds.",
+    price: 130,
+    currency: "INR",
+    cuisine: "Goan",
+    category: "Vegetarian",
+    tags: ["simple", "comfort", "protein"],
+    rating: 4.0,
+  },
+  {
+    id: "food9",
+    name: "Chicken Cafreal",
+    description: "Green masala chicken grilled with lime and coriander.",
+    price: 240,
+    currency: "INR",
+    cuisine: "Goan",
+    category: "Non-Vegetarian",
+    tags: ["green", "grilled", "flavorful"],
+    rating: 4.5,
+  },
+];
+
+// LOCATIONS
+const foodLocations = [
+  {
+    id: "location1",
+    name: "Calangute Beach Shacks",
+    city: "Calangute",
+    state: "Goa",
+    availableFoods: ["food1", "food2", "food3", "food4", "food9"],
+  },
+  {
+    id: "location2",
+    name: "Baga Night Market",
+    city: "Baga",
+    state: "Goa",
+    availableFoods: ["food1", "food3", "food4", "food5", "food6", "food9"],
+  },
+  {
+    id: "location3",
+    name: "Panaji Riverfront Cafes",
+    city: "Panaji",
+    state: "Goa",
+    availableFoods: ["food1", "food3", "food5", "food6", "food8", "food2"],
+  },
+  {
+    id: "location4",
+    name: "Mapusa Market Stalls",
+    city: "Mapusa",
+    state: "Goa",
+    availableFoods: ["food4", "food5", "food8", "food9", "food1", "food7"],
+  },
+  {
+    id: "location5",
+    name: "Margao Central Food Hub",
+    city: "Margao",
+    state: "Goa",
+    availableFoods: ["food9", "food1", "food2", "food8", "food4"],
+  },
+  {
+    id: "location6",
+    name: "Candolim Beach Cafes",
+    city: "Candolim",
+    state: "Goa",
+    availableFoods: ["food1", "food2", "food4", "food7", "food5"],
+  },
+  {
+    id: "location7",
+    name: "Anjuna Flea Market",
+    city: "Anjuna",
+    state: "Goa",
+    availableFoods: ["food2", "food3", "food4", "food7", "food9"],
+  },
+  {
+    id: "location8",
+    name: "Vasco Food Street",
+    city: "Vasco da Gama",
+    state: "Goa",
+    availableFoods: ["food8", "food9", "food1", "food3", "food6", "food2"],
+  },
+];
+
+// NUTRITION
+const nutritionInfo = {
+  food1: {
+    calories: 410,
+    protein_g: 32,
+    carbs_g: 18,
+    fat_g: 22,
+    allergens: ["fish", "coconut"],
+  },
+  food2: {
+    calories: 370,
+    protein_g: 30,
+    carbs_g: 10,
+    fat_g: 20,
+    allergens: ["shellfish"],
+  },
+  food3: {
+    calories: 430,
+    protein_g: 33,
+    carbs_g: 15,
+    fat_g: 26,
+    allergens: ["crustacean"],
+  },
+  food4: {
+    calories: 360,
+    protein_g: 29,
+    carbs_g: 12,
+    fat_g: 19,
+    allergens: ["fish"],
+  },
+  food5: {
+    calories: 260,
+    protein_g: 9,
+    carbs_g: 25,
+    fat_g: 11,
+    allergens: ["coconut"],
+  },
+  food6: {
+    calories: 240,
+    protein_g: 8,
+    carbs_g: 22,
+    fat_g: 10,
+    allergens: ["coconut"],
+  },
+  food7: {
+    calories: 310,
+    protein_g: 16,
+    carbs_g: 18,
+    fat_g: 14,
+    allergens: ["dairy"],
+  },
+  food8: { calories: 210, protein_g: 12, carbs_g: 30, fat_g: 7, allergens: [] },
+  food9: { calories: 380, protein_g: 32, carbs_g: 8, fat_g: 18, allergens: [] },
+  food10: {
+    calories: 450,
+    protein_g: 35,
+    carbs_g: 12,
+    fat_g: 28,
+    allergens: ["pork"],
+  },
+};
+
+// STOCKOUTS
+const stockouts = [
+  {
+    id: "so1",
+    foodId: "food3",
+    reason: "Crab unavailable due to fishing restrictions",
+    estimatedRestockMinutes: 720,
+    locationIds: [],
+  },
+  {
+    id: "so2",
+    foodId: "food10",
+    reason: "Pork supply delay",
+    estimatedRestockMinutes: 1440,
+    locationIds: [],
+  },
+  {
+    id: "so3",
+    foodId: "food5",
+    reason: "Dessert sold out at most locations",
+    estimatedRestockMinutes: 300,
+    locationIds: [],
+  },
+];
+// EXPORT
+module.exports = {
+  foodList,
+  foodLocations,
+  nutritionInfo,
+  stockouts,
+};
